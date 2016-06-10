@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMELanguageTypes.h"
+#import "GMEServices.h"
+#import "GMETextSearchFetcher.h"
+#import "GMETextSearchFilter.h"
 
 //! Project version number for GoogleMapsExtension.
 FOUNDATION_EXPORT double GoogleMapsExtensionVersionNumber;

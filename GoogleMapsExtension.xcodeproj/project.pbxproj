@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		114FD1C31D0B268800918D82 /* GoogleMapsExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1C21D0B268800918D82 /* GoogleMapsExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		114FD1D61D0B2B4100918D82 /* _GMEParserObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CA1D0B2B4100918D82 /* _GMEParserObject.h */; };
+		114FD1D71D0B2B4100918D82 /* _GMEParserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1CB1D0B2B4100918D82 /* _GMEParserObject.m */; };
+		114FD1D81D0B2B4100918D82 /* _GMEResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CC1D0B2B4100918D82 /* _GMEResponseParser.h */; };
+		114FD1D91D0B2B4100918D82 /* _GMEResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1CD1D0B2B4100918D82 /* _GMEResponseParser.m */; };
+		114FD1DA1D0B2B4100918D82 /* GMELanguageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CE1D0B2B4100918D82 /* GMELanguageTypes.h */; };
+		114FD1DB1D0B2B4100918D82 /* GMELanguageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1CF1D0B2B4100918D82 /* GMELanguageTypes.m */; };
+		114FD1DC1D0B2B4100918D82 /* GMEServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D01D0B2B4100918D82 /* GMEServices.h */; };
+		114FD1DD1D0B2B4100918D82 /* GMEServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D11D0B2B4100918D82 /* GMEServices.m */; };
+		114FD1DE1D0B2B4100918D82 /* GMETextSearchFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D21D0B2B4100918D82 /* GMETextSearchFetcher.h */; };
+		114FD1DF1D0B2B4100918D82 /* GMETextSearchFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D31D0B2B4100918D82 /* GMETextSearchFetcher.m */; };
+		114FD1E01D0B2B4100918D82 /* GMETextSearchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D41D0B2B4100918D82 /* GMETextSearchFilter.h */; };
+		114FD1E11D0B2B4100918D82 /* GMETextSearchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D51D0B2B4100918D82 /* GMETextSearchFilter.m */; };
 		D47021DEA92D83062117DE3C /* libPods-GoogleMapsExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40C5A8E3F49702EE92EE4C5 /* libPods-GoogleMapsExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +27,18 @@
 		114FD1BF1D0B268800918D82 /* GoogleMapsExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleMapsExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		114FD1C21D0B268800918D82 /* GoogleMapsExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapsExtension.h; sourceTree = "<group>"; };
 		114FD1C41D0B268800918D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114FD1CA1D0B2B4100918D82 /* _GMEParserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GMEParserObject.h; sourceTree = "<group>"; };
+		114FD1CB1D0B2B4100918D82 /* _GMEParserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GMEParserObject.m; sourceTree = "<group>"; };
+		114FD1CC1D0B2B4100918D82 /* _GMEResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GMEResponseParser.h; sourceTree = "<group>"; };
+		114FD1CD1D0B2B4100918D82 /* _GMEResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GMEResponseParser.m; sourceTree = "<group>"; };
+		114FD1CE1D0B2B4100918D82 /* GMELanguageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMELanguageTypes.h; sourceTree = "<group>"; };
+		114FD1CF1D0B2B4100918D82 /* GMELanguageTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMELanguageTypes.m; sourceTree = "<group>"; };
+		114FD1D01D0B2B4100918D82 /* GMEServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEServices.h; sourceTree = "<group>"; };
+		114FD1D11D0B2B4100918D82 /* GMEServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEServices.m; sourceTree = "<group>"; };
+		114FD1D21D0B2B4100918D82 /* GMETextSearchFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMETextSearchFetcher.h; sourceTree = "<group>"; };
+		114FD1D31D0B2B4100918D82 /* GMETextSearchFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMETextSearchFetcher.m; sourceTree = "<group>"; };
+		114FD1D41D0B2B4100918D82 /* GMETextSearchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMETextSearchFilter.h; sourceTree = "<group>"; };
+		114FD1D51D0B2B4100918D82 /* GMETextSearchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMETextSearchFilter.m; sourceTree = "<group>"; };
 		1F2D7ECAB599C4FF5A2D1F2A /* Pods-GoogleMapsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsExtension/Pods-GoogleMapsExtension.release.xcconfig"; sourceTree = "<group>"; };
 		776F9D8BC5DDC0350316679C /* Pods-GoogleMapsExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsExtension/Pods-GoogleMapsExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		C40C5A8E3F49702EE92EE4C5 /* libPods-GoogleMapsExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleMapsExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +78,18 @@
 			isa = PBXGroup;
 			children = (
 				114FD1C21D0B268800918D82 /* GoogleMapsExtension.h */,
+				114FD1CE1D0B2B4100918D82 /* GMELanguageTypes.h */,
+				114FD1CF1D0B2B4100918D82 /* GMELanguageTypes.m */,
+				114FD1D01D0B2B4100918D82 /* GMEServices.h */,
+				114FD1D11D0B2B4100918D82 /* GMEServices.m */,
+				114FD1D21D0B2B4100918D82 /* GMETextSearchFetcher.h */,
+				114FD1D31D0B2B4100918D82 /* GMETextSearchFetcher.m */,
+				114FD1D41D0B2B4100918D82 /* GMETextSearchFilter.h */,
+				114FD1D51D0B2B4100918D82 /* GMETextSearchFilter.m */,
+				114FD1CA1D0B2B4100918D82 /* _GMEParserObject.h */,
+				114FD1CB1D0B2B4100918D82 /* _GMEParserObject.m */,
+				114FD1CC1D0B2B4100918D82 /* _GMEResponseParser.h */,
+				114FD1CD1D0B2B4100918D82 /* _GMEResponseParser.m */,
 				114FD1C41D0B268800918D82 /* Info.plist */,
 			);
 			path = GoogleMapsExtension;
@@ -83,6 +119,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114FD1E01D0B2B4100918D82 /* GMETextSearchFilter.h in Headers */,
+				114FD1D61D0B2B4100918D82 /* _GMEParserObject.h in Headers */,
+				114FD1DE1D0B2B4100918D82 /* GMETextSearchFetcher.h in Headers */,
+				114FD1D81D0B2B4100918D82 /* _GMEResponseParser.h in Headers */,
+				114FD1DA1D0B2B4100918D82 /* GMELanguageTypes.h in Headers */,
+				114FD1DC1D0B2B4100918D82 /* GMEServices.h in Headers */,
 				114FD1C31D0B268800918D82 /* GoogleMapsExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114FD1DB1D0B2B4100918D82 /* GMELanguageTypes.m in Sources */,
+				114FD1DF1D0B2B4100918D82 /* GMETextSearchFetcher.m in Sources */,
+				114FD1E11D0B2B4100918D82 /* GMETextSearchFilter.m in Sources */,
+				114FD1DD1D0B2B4100918D82 /* GMEServices.m in Sources */,
+				114FD1D71D0B2B4100918D82 /* _GMEParserObject.m in Sources */,
+				114FD1D91D0B2B4100918D82 /* _GMEResponseParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +344,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GoogleMapsExtension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kerr.GoogleMapsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,6 +362,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GoogleMapsExtension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kerr.GoogleMapsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
