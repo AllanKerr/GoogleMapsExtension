@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		114FD1C31D0B268800918D82 /* GoogleMapsExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1C21D0B268800918D82 /* GoogleMapsExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		114FD1D61D0B2B4100918D82 /* _GMEParserObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CA1D0B2B4100918D82 /* _GMEParserObject.h */; };
+		114FD1D61D0B2B4100918D82 /* _GMEParserObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CA1D0B2B4100918D82 /* _GMEParserObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		114FD1D71D0B2B4100918D82 /* _GMEParserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1CB1D0B2B4100918D82 /* _GMEParserObject.m */; };
-		114FD1D81D0B2B4100918D82 /* _GMEResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CC1D0B2B4100918D82 /* _GMEResponseParser.h */; };
+		114FD1D81D0B2B4100918D82 /* _GMEResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CC1D0B2B4100918D82 /* _GMEResponseParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		114FD1D91D0B2B4100918D82 /* _GMEResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1CD1D0B2B4100918D82 /* _GMEResponseParser.m */; };
-		114FD1DA1D0B2B4100918D82 /* GMELanguageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CE1D0B2B4100918D82 /* GMELanguageTypes.h */; };
+		114FD1DA1D0B2B4100918D82 /* GMELanguageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1CE1D0B2B4100918D82 /* GMELanguageTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114FD1DB1D0B2B4100918D82 /* GMELanguageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1CF1D0B2B4100918D82 /* GMELanguageTypes.m */; };
-		114FD1DC1D0B2B4100918D82 /* GMEServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D01D0B2B4100918D82 /* GMEServices.h */; };
+		114FD1DC1D0B2B4100918D82 /* GMEServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D01D0B2B4100918D82 /* GMEServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114FD1DD1D0B2B4100918D82 /* GMEServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D11D0B2B4100918D82 /* GMEServices.m */; };
-		114FD1DE1D0B2B4100918D82 /* GMETextSearchFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D21D0B2B4100918D82 /* GMETextSearchFetcher.h */; };
+		114FD1DE1D0B2B4100918D82 /* GMETextSearchFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D21D0B2B4100918D82 /* GMETextSearchFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114FD1DF1D0B2B4100918D82 /* GMETextSearchFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D31D0B2B4100918D82 /* GMETextSearchFetcher.m */; };
-		114FD1E01D0B2B4100918D82 /* GMETextSearchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D41D0B2B4100918D82 /* GMETextSearchFilter.h */; };
+		114FD1E01D0B2B4100918D82 /* GMETextSearchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D41D0B2B4100918D82 /* GMETextSearchFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114FD1E11D0B2B4100918D82 /* GMETextSearchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D51D0B2B4100918D82 /* GMETextSearchFilter.m */; };
 		D47021DEA92D83062117DE3C /* libPods-GoogleMapsExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40C5A8E3F49702EE92EE4C5 /* libPods-GoogleMapsExtension.a */; };
 /* End PBXBuildFile section */
