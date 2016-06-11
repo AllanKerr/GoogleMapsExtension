@@ -13,7 +13,7 @@
 @protocol _GMEResponseParserDelegate <NSObject>
 @required
 - (void)parser:(_GMEResponseParser *)parser didFinishWithPlaces:(NSArray <GMSPlace *>*)places;
-- (void)parser:(_GMEResponseParser *)parser didFailWithStatus:(NSString *)status;
+- (void)parser:(_GMEResponseParser *)parser didFailWithError:(NSError *)error;
 @end
 
 @interface _GMEResponseParser : NSObject

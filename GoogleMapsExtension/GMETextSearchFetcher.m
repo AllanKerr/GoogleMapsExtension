@@ -62,9 +62,13 @@ NSString *const kGMETextSearchFetcherComponentKey       = @"key";
     NSURL *url = [NSURL URLWithString:path];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     self.task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        self.parser = [[_GMEResponseParser alloc] initWithResponseData:data];
-        self.parser.delegate = self;
-        [self.parser parse];
+        if (error) {
+            [self.delegate didFailSearchWithError:error];
+        } else {
+            self.parser = [[_GMEResponseParser alloc] initWithResponseData:data];
+            self.parser.delegate = self;
+            [self.parser parse];
+        }
     }];
     [self.task resume];
 }
@@ -73,9 +77,7 @@ NSString *const kGMETextSearchFetcherComponentKey       = @"key";
     [self.delegate didSearchWithPlaces:places];
 }
 
-- (void)parser:(_GMEResponseParser *)parser didFailWithStatus:(NSString *)status {
-    NSDictionary *userInfo = @{status : NSLocalizedDescriptionKey};
-    NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain code:1000 userInfo:userInfo];
+- (void)parser:(_GMEResponseParser *)parser didFailWithError:(NSError *)error {
     [self.delegate didFailSearchWithError:error];
 }
 

@@ -11,6 +11,10 @@
 
 NSString *const kGMEResponseParserStatus                    = @"status";
 NSString *const kGMEResponseParserStatusOK                  = @"OK";
+NSString *const kGMEResponseParserStatusZeroResults         = @"ZERO_RESULTS";
+NSString *const kGMEResponseParserStatusOverLimit           = @"OVER_QUERY_LIMIT";
+NSString *const kGMEResponseParserStatusRequestDenied       = @"REQUEST_DENIED";
+NSString *const kGMEResponseParserStatusInvalidRequest      = @"INVALID_REQUEST";
 
 NSString *const kGMEResponseParserResult                    = @"result";
 NSString *const kGMEResponseParserResultName                = @"name";
@@ -89,6 +93,10 @@ NSString *const kGMEResponseParserResultOpenNowFalse        = @"false";
     self.currentObject = topObject;
 }
 
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
+    [self.delegate parser:self didFailWithError:parseError];
+}
+
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
     NSString *status = [self.rootObject valueForKey:kGMEResponseParserStatus];
     if ([self _validateStatus:status]) {
@@ -111,9 +119,27 @@ NSString *const kGMEResponseParserResultOpenNowFalse        = @"false";
 - (BOOL)_validateStatus:(NSString *)status {
     BOOL isValid = [status isEqualToString:kGMEResponseParserStatusOK];
     if (!isValid) {
-        [self.delegate parser:self didFailWithStatus:status];
+        if ([status isEqualToString:kGMEResponseParserStatusZeroResults]) {
+            [self.delegate parser:self didFinishWithPlaces:@[]];
+        } else {
+            NSError *error = [self _parseErrorStatus:status];
+            [self.delegate parser:self didFailWithError:error];
+        }
     }
     return isValid;
+}
+
+- (NSError *)_parseErrorStatus:(NSString *)status {
+    GMSPlacesErrorCode errorCode;
+    if ([status isEqualToString:kGMEResponseParserStatusOverLimit]) {
+        errorCode = kGMSPlacesUsageLimitExceeded;
+    } else if ([status isEqualToString:kGMEResponseParserStatusRequestDenied]) {
+        errorCode = kGMSPlacesKeyInvalid;
+    } else if ([status isEqualToString:kGMEResponseParserStatusInvalidRequest]) {
+        errorCode = kGMSPlacesInternalError;
+    }
+    NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey : status};
+    return [NSError errorWithDomain:NSCocoaErrorDomain code:errorCode userInfo:userInfo];
 }
 
 - (void)_parseResults:(NSArray *)results {

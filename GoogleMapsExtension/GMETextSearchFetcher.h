@@ -11,7 +11,7 @@
 
 @protocol GMETextSearchFetcherDelegate <NSObject>
 @required
-- (void)didSearchWithPlaces:(NSArray <GMSPlace *>*)predictions;
+- (void)didSearchWithPlaces:(NSArray <GMSPlace *>*)places;
 - (void)didFailSearchWithError:(NSError *)error;
 @end
 
