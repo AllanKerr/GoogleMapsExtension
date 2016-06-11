@@ -62,8 +62,6 @@ NSString *const kGMETextSearchFetcherComponentKey       = @"key";
     NSURL *url = [NSURL URLWithString:path];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     self.task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSString *newStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", newStr);
         self.parser = [[_GMEResponseParser alloc] initWithResponseData:data];
         self.parser.delegate = self;
         [self.parser parse];
