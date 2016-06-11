@@ -20,7 +20,7 @@
 		114FD1DF1D0B2B4100918D82 /* GMETextSearchFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D31D0B2B4100918D82 /* GMETextSearchFetcher.m */; };
 		114FD1E01D0B2B4100918D82 /* GMETextSearchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD1D41D0B2B4100918D82 /* GMETextSearchFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114FD1E11D0B2B4100918D82 /* GMETextSearchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FD1D51D0B2B4100918D82 /* GMETextSearchFilter.m */; };
-		D47021DEA92D83062117DE3C /* libPods-GoogleMapsExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40C5A8E3F49702EE92EE4C5 /* libPods-GoogleMapsExtension.a */; };
+		DD2DCE573CD0AB95EB1998C1 /* Pods_GoogleMapsExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3EF0BACDB92B9529E15BA6 /* Pods_GoogleMapsExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		114FD1D51D0B2B4100918D82 /* GMETextSearchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMETextSearchFilter.m; sourceTree = "<group>"; };
 		1F2D7ECAB599C4FF5A2D1F2A /* Pods-GoogleMapsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsExtension/Pods-GoogleMapsExtension.release.xcconfig"; sourceTree = "<group>"; };
 		776F9D8BC5DDC0350316679C /* Pods-GoogleMapsExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMapsExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMapsExtension/Pods-GoogleMapsExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		C40C5A8E3F49702EE92EE4C5 /* libPods-GoogleMapsExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleMapsExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3EF0BACDB92B9529E15BA6 /* Pods_GoogleMapsExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapsExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47021DEA92D83062117DE3C /* libPods-GoogleMapsExtension.a in Frameworks */,
+				DD2DCE573CD0AB95EB1998C1 /* Pods_GoogleMapsExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		23572543C07434154A7506AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C40C5A8E3F49702EE92EE4C5 /* libPods-GoogleMapsExtension.a */,
+				EA3EF0BACDB92B9529E15BA6 /* Pods_GoogleMapsExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kerr.GoogleMapsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -366,7 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kerr.GoogleMapsExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
