@@ -10,7 +10,7 @@ pod install
 ```
 
 In order to use the text search functionality an API key must be provided. This can be done by adding the following to the AppDelegate:
-```
+```Objective-C
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     return [GMEServices provideAPIKey:GoogleMapsExtensionAPIKey];
 }
@@ -18,7 +18,7 @@ In order to use the text search functionality an API key must be provided. This 
 **Note:**
 **In order to create your API key navigate to the [Credentials](https://console.developers.google.com/apis/credentials) section of the [Google API Managager](https://console.developers.google.com/) and create a new Browser key.** _**An iOS key will NOT work.**_ **The [Google Places API Web Service](https://console.developers.google.com/apis/api/places_backend/) must also be enabled from the Google API Manager.**
 
-```
+```Objective-C
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     return [GMEServices provideAPIKey:GoogleMapsExtensionAPIKey];
 }
@@ -26,7 +26,7 @@ In order to use the text search functionality an API key must be provided. This 
 
 Once the API key has been provided GMETextSearchFetcher can be used:
 
-```
+```Objective-C
 @interface SearchController : NSObject <GMETextSearchFetcherDelegate>
 @property (nonatomic, strong) GMETextSearchFetcher *fetcher;
 @end
